@@ -8,7 +8,7 @@ metadata:
 spec:
   project: products-catalog
   source:
-    repoURL: https://github.com/rahmed-rh/amq-online-gitops.git
+    repoURL: https://github.com/rahmed-rh/products-microservice.git
     targetRevision: HEAD
     path: base/products-catalog
   syncPolicy:

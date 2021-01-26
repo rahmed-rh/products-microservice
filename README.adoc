@@ -1,0 +1,14 @@
+:source-highlighter: highlightjs
+:data-uri:
+:toc: left
+:markup-in-source: +verbatim,+quotes,+specialcharacters
+:icons: font
+:stylesdir: stylesheets
+:stylesheet: colony.css
+
+= Sample Micro service
+
+.*Goals*
+
+. Deploy AMQ Online tenant
+. Use Quarks
