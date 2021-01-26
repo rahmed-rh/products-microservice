@@ -12,3 +12,21 @@
 
 . Deploy AMQ Online tenant
 . Use Quarks
+
+== Define ArgoCD AppProject and Application
+
+We defined project for Products Microservice, this will cover
+
+. AMQ Online tenant files (Queues, and topics)
+. Quarks application
+
+Refer to following file for full details
+
+* xref:argocd-products-catalog-config/products-catalog.yaml[argocd-products-catalog-config/products-catalog.yaml]
+* xref:argocd-products-catalog-config/products-catalog-project.yaml[argocd-products-catalog-config/products-catalog-project.yaml]
+
+Apply the following to define the ArgoCD AppProject and Application
+[source,bash]
+----
+oc apply -f argocd-products-catalog-config
+----

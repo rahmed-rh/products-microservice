@@ -5,11 +5,10 @@ kind: Kustomization
 generatorOptions:
  disableNameSuffixHash: true
 
-namePrefix: dev-
 commonLabels:
   environment: development
 
-namespace: pgo
+namespace: products-catalog
 
 bases:
 - ../../../base/products-catalog/
