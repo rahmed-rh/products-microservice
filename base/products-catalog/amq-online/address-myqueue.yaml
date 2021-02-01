@@ -4,5 +4,5 @@ metadata:
   name: standard-products-catalog.myqueue
 spec:
   address: myqueue
-  plan: standard-small-queue
+  plan: default-paging-large-queue
   type: queue
