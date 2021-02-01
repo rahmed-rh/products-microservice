@@ -1,8 +1,7 @@
 apiVersion: user.enmasse.io/v1beta1
 kind: MessagingUser
 metadata:
-  name: standard-demospace.demo-user
-  namespace: amqp-demo
+  name: standard-products-catalog.demo-user
 spec:
   username: demo-user
   authentication:
