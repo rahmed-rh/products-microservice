@@ -5,32 +5,32 @@ metadata:
 spec:
   authenticationService:
     name: standard-authservice
-  # connectors:
-  # - name: remote
-  #   endpointHosts:
-  #   - host: messaging-1.apps.cluster-8656.8656.sandbox114.opentlc.com
-  #     port: 443
-  #   tls:
-  #     caCert:
-  #       valueFromSecret:
-  #         name: remote-secret
-  #         key: tls.crt
-  #     clientCert:
-  #       valueFromSecret:
-  #         name: server-secret
-  #         key: tls.crt
-  #     clientKey:
-  #       valueFromSecret:
-  #         name: server-secret
-  #         key: tls.key
-  #   credentials:
-  #     username:
-  #       value: demo-user
-  #     password:
-  #       value: password
-  #   addresses:
-  #   - name: remoteQueue
-  #     pattern: "*"
+  connectors:
+  - name: remote
+    endpointHosts:
+    - host: messaging-2.apps.cluster-1d9e.gcp.testdrive.openshift.com
+      port: 443
+    tls:
+      caCert:
+        valueFromSecret:
+          name: remote-secret
+          key: tls.crt
+      clientCert:
+        valueFromSecret:
+          name: server-secret
+          key: tls.crt
+      clientKey:
+        valueFromSecret:
+          name: server-secret
+          key: tls.key
+    credentials:
+      username:
+        value: demo-user
+      password:
+        value: password
+    addresses:
+    - name: remoteQueue
+      pattern: "*"
   endpoints:
   - name: messaging
     service: messaging
@@ -38,7 +38,7 @@ spec:
       type: route
       routeServicePort: amqps
       routeTlsTermination: passthrough
-      routeHost: products-catalog-messaging.belux-5c19b80d0b42bf06f50309d5c8a080e8-0000.eu-de.containers.appdomain.cloud
+      routeHost: messaging-1.apps.cluster-1d9e.gcp.testdrive.openshift.com
     exports:
     - kind: ConfigMap
       name: standard-products-catalog-cm
