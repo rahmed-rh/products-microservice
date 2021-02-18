@@ -23,7 +23,8 @@ secretGenerator:
   files:
     - amq-online/crt/tls.crt
     - amq-online/crt/tls.key
-
+  type: "kubernetes.io/tls"
+  
 patchesStrategicMerge:
 - amq-online/patch-address-space-standard-products-catalog.yaml
 - amq-online/patch-address-myqueue.yaml
