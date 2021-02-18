@@ -21,8 +21,8 @@ secretGenerator:
   type: "kubernetes.io/tls"
 - name: remote-secret
   files:
-  - cert=crt/messaging-endpoint_cluster-1d9e_cert.crt
-  - key=crt/messaging-endpoint_cluster-1d9e.key
+  - cert=amq-online/crt/messaging-endpoint_cluster-1d9e_cert.crt
+  - key=amq-online/crt/messaging-endpoint_cluster-1d9e.key
 
 patchesStrategicMerge:
 - amq-online/patch-address-space-standard-products-catalog.yaml
