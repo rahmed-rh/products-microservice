@@ -3,6 +3,4 @@ kind: Address
 metadata:
   name: standard-products-catalog.myqueue
 spec:
-  address: myqueue
   plan: default-paging-large-partitioned-queue
-  type: queue
