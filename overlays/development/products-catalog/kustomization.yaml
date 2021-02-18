@@ -16,13 +16,13 @@ bases:
 secretGenerator:
 - name: server-secret
   files:
-    - crt/tls.crt
-    - crt/tls.key
+    - amq-online/crt/tls.crt
+    - amq-online/crt/tls.key
   type: "kubernetes.io/tls"
 - name: remote-secret
   files:
-  - cert=amq-online/crt/messaging-endpoint_cluster-1d9e_cert.crt
-  - key=amq-online/crt/messaging-endpoint_cluster-1d9e.key
+    - amq-online/crt/tls.crt
+    - amq-online/crt/tls.key
 
 patchesStrategicMerge:
 - amq-online/patch-address-space-standard-products-catalog.yaml
