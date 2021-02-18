@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/rahmed-rh/products-microservice.git
     targetRevision: HEAD
-    path: base/products-catalog
+    path: overlays/products-catalog/development
   syncPolicy:
     automated:
       prune: true

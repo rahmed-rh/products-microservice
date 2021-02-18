@@ -13,4 +13,5 @@ namespace: products-catalog
 bases:
 - ../../../base/products-catalog/
 
-resources:
+patchesStrategicMerge:
+- amq-online/patch-address-space-standard-products-catalog.yaml
