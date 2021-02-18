@@ -5,6 +5,32 @@ metadata:
 spec:
   authenticationService:
     name: standard-authservice
+  # connectors:
+  # - name: remote
+  #   endpointHosts:
+  #   - host: messaging-1.apps.cluster-8656.8656.sandbox114.opentlc.com
+  #     port: 443
+  #   tls:
+  #     caCert:
+  #       valueFromSecret:
+  #         name: remote-secret
+  #         key: tls.crt
+  #     clientCert:
+  #       valueFromSecret:
+  #         name: server-secret
+  #         key: tls.crt
+  #     clientKey:
+  #       valueFromSecret:
+  #         name: server-secret
+  #         key: tls.key
+  #   credentials:
+  #     username:
+  #       value: demo-user
+  #     password:
+  #       value: password
+  #   addresses:
+  #   - name: remoteQueue
+  #     pattern: "*"
   endpoints:
   - name: messaging
     service: messaging
