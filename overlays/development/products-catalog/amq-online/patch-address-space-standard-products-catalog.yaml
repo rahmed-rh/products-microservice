@@ -8,7 +8,7 @@ spec:
   connectors:
   - name: remote
     endpointHosts:
-    - host: messaging-2.apps.cluster-1d9e.gcp.testdrive.openshift.com
+    - host: messaging-2.apps.cluster-107d.gcp.testdrive.openshift.com
       port: 443
     tls:
       caCert:
@@ -38,7 +38,7 @@ spec:
       type: route
       routeServicePort: amqps
       routeTlsTermination: passthrough
-      routeHost: messaging-1.apps.cluster-1d9e.gcp.testdrive.openshift.com
+      routeHost: messaging-1.apps.cluster-107d.gcp.testdrive.openshift.com
     exports:
     - kind: ConfigMap
       name: standard-products-catalog-cm
